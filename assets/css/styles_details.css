@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/AvenirNext.ttc');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/Avenir.ttc');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/AvenirNextCondensed.ttc');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    background: #000;
+}
+
+body::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/background_login.jpg);
+    opacity: 0.5;
+    background-position: center;
+}
+nav {
+    position: fixed;
+    z-index: 1;
+    padding: 25px ;
+}
+
+nav a img {
+    width: 160px;
+}
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    padding: 60px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.75);
+    transform: translate(-50%,-50%);
+}
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-wrapper form {
+    margin: 25px 0 65px;
+}
+
+form .form-control {
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.form-control input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+}

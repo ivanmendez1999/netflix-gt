@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/AvenirNext.ttc');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/Avenir.ttc');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Netflix";
+    src: url('../font/AvenirNextCondensed.ttc');
+    font-weight: 200;
+    font-style: normal;
+}
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: 'Netflix';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-item {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation {
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content:space-around;
+}
+
+.header {
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%,black 70%,rgba(0,0,0, .5) 85%, transparent 100%);
+}
+
+.featured {
+    margin-top: -90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-details{
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:linear-gradient(to top, black 50%,transparent 100%);
+}
+
+.tags{
+    /*border: 1px solid yellow;*/
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.tag{
+    /*border: 1px solid red;*/
+    display: flex;
+}
+
+.tag:before {
+    content: '●';
+    margin-right: 10px;
+    position: relative;
+     top: -1px;
+}
+
+.tag:firt-child::before {
+    display: none;
+}
+
+.featured-actions{
+    /*height: 100px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.button {
+ /* border: 1px solid blue; */
+ border: none;
+ background: white;
+ display:flex;
+ align-items: center;
+ padding: 2px 12px 2px .5em;
+ border-radius: 3px;
+}
+
+.button::before {
+/*border: 1px solid red;*/
+content: '';
+display: inline-block;
+width: 25px;
+height: 25px;
+}
+
+.button-secondary {
+/*border: 1px solid red;*/
+background: none;
+color: white;
+font-size: 1.1em;
+min-width: 100px;
+border: none;
+}
+
+.button-secondary::before {
+    content: '';
+    display: block;
+    /*border: 1px solid green;*/
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.icon-plus::before {
+    background: url(/images/icons/plus.svg);
+}
+
+.icon-play::before {
+    background: url(/images/icons/play.svg);
+}
+
+.icon-info::before {
+    background: url(/images/icons/info.svg);
+}
+
+.list-content {
+    /*border: 1px solid red;*/
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.list-content::-webkit-scrollbar {
+    background: transparent 90%; /* Hacer que el agarre de la barra de desplazamiento sea transparente */
+}
+
+.list-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list-item:first-child {
+    margin: 0px;
+}
+
+.list {
+    /*border: 1px solid blue;*/
+    padding: 0 1px;
+}
+
+main {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer {
+    /*border: 1px solid red;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 0.3em 1em;
+}
+
+.tab-list {
+    /*border: 1px solid green;*/
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+}
+
+.tab-list a {
+    color: #6e6e6e;
+}
+
+.tab-item svg {
+    display: block;
+    margin: auto;
+}
+
+.tab-item {
+    /*border: 1px solid red;*/
+    text-align: center;
+    color: #6e6e6e;
+}
+
+.tab-item :hover {
+    fill: white;
+}
+
+.items-featured-details {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 150px;
+    grid-auto-flow: column;
+    justify-content:space-around;
+}
+
+.item-featured-2 {
+    list-style: none;
+    text-align: right;
+}
+
+.disen {
+    /* border: 1px solid red; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2bf55e;
+}
+
+.actions-featured {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: row;
+    list-style: none;
+    color: #000;
+}
+
+.button-details1 {
+     /* border: 1px solid red; */
+ border: none;
+ background: #fff;
+ display: inline-block;
+ align-items: center;
+ padding: 2px 12px 2px .5em;
+ border-radius: 3px;
+}
+
+.button-details2 {
+    /* border: 1px solid red; */
+    background: none;
+    color: white;
+    font-size: 1.1em;
+    min-he: 100px;
+    border: none;
+}
+
+.button-details2::before {
+    content: '';
+    display: block;
+    /*border: 1px solid green;*/
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+.a-text {
+    color: #000;
+}
+
+.a2 {
+    color: #fff;
+}
+
+.main-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-content-sim {
+    /*border: 1px solid red;*/
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.list-content-sim::-webkit-scrollbar {
+    background: transparent 90%; /* Hacer que el agarre de la barra de desplazamiento sea transparente */
+}
+
+.list-item-sim {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list-item-sim:first-child {
+    margin: 0px;
+}
+
+.list {
+    /*border: 1px solid blue;*/
+    padding: 0 1px;
+}
+
+.description-actors {
+    color: #6e6e6e;
+}
+
+.button-actions {
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content:left;
+    list-style: none;
+}
