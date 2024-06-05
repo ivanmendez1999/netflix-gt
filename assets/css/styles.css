@@ -174,7 +174,8 @@ border: none;
 main {
     /*border: 1px solid red;*/
     display: flex;
-    flex-direction: column;
+    flex-direction: columnzaz
+    
     gap: 20px;
 }
 
